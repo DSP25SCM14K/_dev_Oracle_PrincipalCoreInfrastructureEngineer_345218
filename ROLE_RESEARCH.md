@@ -1,6 +1,8 @@
 # Oracle 345218 — company and role research
 
-Research date: October 8, 2026. Research is separate from the portfolio narrative.
+Research initially completed October 8, 2026; Oracle OKE GPU-node and autoscaling documentation and Kubernetes GPU scheduling documentation revisited October 10, 2026. Research is separate from the portfolio narrative.
+
+The resume supplied on October 10 from `oracle_devpatna/codex/_dev_Oracle_PrincipalCoreInfrastructureEngineer_345218.docx` contains the same 15 experience bullets already published, each retained verbatim. The existing repository and Pages deployment are reused. The exact job page could not be reopened during this refresh; job-specific details below retain their October 8 verification date, and continued vacancy availability is not confirmed.
 
 ## Verified job
 
@@ -30,6 +32,8 @@ Slurm manages GPUs as generic resources and supports GPU allocation and task bin
 
 ### Scaling pods and capacity
 
+The current OKE GPU-node guide also documents GPU host repair for eligible managed worker nodes. It can replace a node identified for repair or reboot one after an eligible health signal. A production handoff should distinguish hardware recovery from pod rescheduling and checkpoint recovery; that separation is an inferred design consideration, not a claim about this vacancy’s implementation. [OKE GPU node operations](https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengrunninggpunodes.htm).
+
 Oracle separates node-pool autoscaling from pod autoscaling. Cluster Autoscaler changes available node capacity; HPA adjusts pod replicas; VPA adjusts requested resources. These mechanisms have different prerequisites and scopes. My inference is that GPU serving designs need a coordinated plan for pending pods, node provisioning delays, model loading, warm-up, and drain behavior. Adding replicas cannot fix an unavailable GPU node or a storage bottleneck. [OKE autoscaling](https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengautoscalingclusters.htm).
 
 ### Performance diagnosis and security
@@ -58,4 +62,3 @@ All 23 unique supplied projects are retained. EXPOS is deduplicated. Only the fo
 - Discuss secure access and network policy without obscuring customer workflow.
 
 These themes are preparation suggestions, not confirmed interview questions.
-

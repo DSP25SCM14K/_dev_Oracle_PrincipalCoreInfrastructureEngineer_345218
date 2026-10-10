@@ -2,6 +2,8 @@
 
 Portfolio based on _dev_Oracle_PrincipalCoreInfrastructureEngineer_345218.docx.
 
+Reviewed against the newly supplied `oracle_devpatna/codex/` resume copy on October 10, 2026. All 15 experience bullets are included verbatim. Role research includes refreshed OKE documentation and records the original job-posting verification date.
+
 Live: https://dsp25scm14k.github.io/_dev_Oracle_PrincipalCoreInfrastructureEngineer_345218/
 
 Open index.html or serve this directory using a static HTTP server. No build tools are needed. GitHub Pages uses the main branch root and .nojekyll.
